@@ -17,3 +17,4 @@ git config --global core.excludesFile ~/.gitignore
 git branch <branchname>  команда для создания новой ветки
 git checkout <branchname> переключится на другую ветку. По сути эта команда обновляет ссылку ref: refs/heads/master на ref: refs/heads/<branchname> в файле HEAD
 git checkout -b <branchname> создать ветку и тут же переключится на неё
+git checkout -f <branchname> удалит все несохраненные (незакоммиченные) изменения в текущей ветке и переключится на новую ветку. Вызов checkout c флагом -f без указания ветки можно использовать для отмены всех незакоммиченных изменений в текущей ветке
