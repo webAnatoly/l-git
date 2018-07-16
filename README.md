@@ -16,3 +16,4 @@ git config --global core.excludesFile ~/.gitignore
 
 git branch <brancname>  команда для создания новой ветки
 git checkout <branchnam> переключится на другую ветку. По сути эта команда обновляет ссылку ref: refs/heads/master на ref: refs/heads/<branchname> в файле HEAD
+git checkout -b <branchname> создать ветку и тут же переключится на неё
