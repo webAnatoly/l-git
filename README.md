@@ -14,6 +14,6 @@ git config --global core.excludesFile ~/.gitignore
 эта команда добавляет в глобальный конфиг строку о том, что существует глобальный 
 файл .gitignore в директории пользователя. Глобальный .gitignore используется для игнора например вспомогательных файлов IDE, например WebStorm создает каталог .idea для своих вспомогательных файлов. Вот её можно добавлять в глобальный .gitignore 
 
-git branch <brancname>  команда для создания новой ветки
-git checkout <branchnam> переключится на другую ветку. По сути эта команда обновляет ссылку ref: refs/heads/master на ref: refs/heads/<branchname> в файле HEAD
+git branch <branchname>  команда для создания новой ветки
+git checkout <branchname> переключится на другую ветку. По сути эта команда обновляет ссылку ref: refs/heads/master на ref: refs/heads/<branchname> в файле HEAD
 git checkout -b <branchname> создать ветку и тут же переключится на неё
