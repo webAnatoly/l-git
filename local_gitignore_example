@@ -1,0 +1,14 @@
+# Тут просто некоторые примеры синтаксиса
+
+# Compiled files for Java and Python
+*.class
+*.py[co]
+# same as: *.pyc OR *.pyo, but NOT *.pyco
+
+# квадратные скобки означают один из символов или один из набора символов. Пример с набором символов:
+migrate-201[5-7]*
+# anywhere/migrate-2015, migrate-20170101.db, NOT migrate-2018...
+
+# знак вопроса означает любой символ
+*.py?
+# anywhere/*.py<any char>, for expample *.pyc OR *.pyo OR *.pyd etc. but NOT *.py
