@@ -1,0 +1,17 @@
+# Пример глобального файла .gitignore Его можно найти тут /home/<user>/.gitignore 
+
+#.idea это служебный каталог создаваемый программой WebStorm
+.idea
+
+#.vscode это служебный каталог создаваемый программой Visual Studio Code
+.vscode
+
+# logs
+*.log
+#anywhere/my.log, NOT my.logs, my.log.tmp
+
+# node.js modules
+node_modules
+
+# php composer modules
+vendor

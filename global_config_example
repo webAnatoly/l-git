@@ -1,0 +1,14 @@
+# Примет глобального конфига .gitconfig. Обычно находиться в /home/<username>/.gitconfig
+
+[user]
+	email = tolik.demianov@gmail.com
+	name = Tolik Dem
+[alias]
+	ch = checkout
+	co = commit -m
+	st = status
+	br = branch
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=format-local:'%F %T'
+[core]
+	pager = less -RFX
+	excludesFile = /home/<username>/.gitignore
