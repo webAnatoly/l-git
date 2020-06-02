@@ -107,4 +107,3 @@ git tag -a -m 'Описание тега' v1.0.0 <номер_коммита>
 [GitHowTo](https://githowto.com/ru)  
 [Документация](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)  
 
-Добавил тренировочные изменения, которые буду отменять командой git revert
