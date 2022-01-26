@@ -169,6 +169,10 @@ git commit -m'merged feature #123'
 
 ==
 
+## Разные команды
 
+`git log --oneline --all --graph`
+
+`git diff --numstat  ветка1 ветка2`
 
 
