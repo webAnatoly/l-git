@@ -178,6 +178,13 @@ git commit -m'merged feature #123'
 ## Разные команды
 
 `git log --oneline --all --graph`
+`git log -p` or `git log --patch` - shows the difference (the patch output) introduced in each commit.
+`git log --stat` - to see some abbreviated stats for each commit
+`git log --pretty=oneline`
+`git log --pretty=short`
+`git log --pretty=full`
+`git log --pretty=fuller`
+`git log --pretty=format:"%h - %an, %ar : %s"` - кастомный формат где % это плейсхолдеры гита из документации
 
 `git diff --numstat  ветка1 ветка2`
 
