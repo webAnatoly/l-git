@@ -179,12 +179,14 @@ git commit -m'merged feature #123'
 
 `git log --oneline --all --graph`
 `git log -p` or `git log --patch` - shows the difference (the patch output) introduced in each commit.
-`git log --stat` - to see some abbreviated stats for each commit
 `git log --pretty=oneline`
 `git log --pretty=short`
 `git log --pretty=full`
 `git log --pretty=fuller`
 `git log --pretty=format:"%h - %an, %ar : %s"` - кастомный формат где % это плейсхолдеры гита из документации
+`git log --stat`    - to see some abbreviated stats for each commit
+`git log --patch`   - смотреть изменения в файлах внесённые коммитом
+`git log --patch-with-stat`
 
 `git diff --numstat  ветка1 ветка2`
 
@@ -194,4 +196,10 @@ xev - print contents of X events (появляется окно, на котор
 
 `xed` - текстовый редактор. Есть еще `gedit` но он у меня не установлен
 
+## Рецепт слияня веток перед пулл реквестом.
+Зайти на фича ветку `git checkout <task_branch>` и находясь на ней с сервера в неё затащить актуальюную мастер ветку командой `git pull origin master`
+
+## Взять ветку с удалённого репозитория
+git checkout -b my_branch origin/my_branch
+git pull
 
