@@ -203,3 +203,5 @@ xev - print contents of X events (появляется окно, на котор
 git checkout -b my_branch origin/my_branch
 git pull
 
+## Вывести список конфликтных файлов при мерджинге (слиянии)
+git diff --name-only --diff-filter=U
