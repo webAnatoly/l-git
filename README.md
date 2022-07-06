@@ -119,14 +119,14 @@ git tag -a -m 'Описание тега' v1.0.0 <номер_коммита>
 
 ==
 
-#### Rebase
+# Rebase
 
 Ситуация когда в процессе работы над фиче-веткой, что-то было добавлено в ветку мастер
 и мы хотим эти измения иметь в своей ветке, так как будто только что ответвились от мастера.
-В этом случае можно сделать rebase. 
-Для этого: 
-`git checkout <your-feature-branch>` 
-`git rebase master` 
+В этом случае можно сделать rebase.  
+Для этого:  
+`git checkout <your-feature-branch>`  
+`git rebase master`  
 [Подробнее в видео](https://www.youtube.com/watch?v=jxwPgfmutjs&list=PLDyvV36pndZFHXjXuwA_NywNrVQO0aQqb&index=41&ab_channel=JavaScript.ru) 
 
 ==
@@ -185,13 +185,9 @@ git commit -m'merged feature #123'
 
 [Источник](https://git-scm.com/book/ru/v2/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%9F%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8-%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D0%BE%D0%B2)
 
-
-Мой пример:
-`git log --until=2016-01-31 --author=Jeff --committer=Jeff --grep=http` - Выведет все коммиты до 31 января 2016г. сделанные человеком по имени Jeff и в тексте коммитов присутствует слово "http"
-
 ==
 
-## Разные команды
+## Разные команды git log
 
 `git log --oneline --all --graph`  
 `git log -p` or `git log --patch` - shows the difference (the patch output) introduced in each commit.  
@@ -206,11 +202,13 @@ git commit -m'merged feature #123'
 
 `git diff --numstat  ветка1 ветка2`
 
-#####
-Заготовки git log
+##### Заготовки git log
 `git log --pretty=format:"%H %an %ad"`  
 `git log --pretty=format:"%H %an %ad" --date=short`  
 `git log --pretty=format:"%h %an, %ad | %s"`  
+Мой пример:  
+`git log --until=2016-01-31 --author=Jeff --committer=Jeff --grep=http` - Выведет все коммиты до 31 января 2016г. сделанные человеком по имени Jeff и в тексте коммитов присутствует слово "http"
+ 
 
 
 
