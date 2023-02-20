@@ -201,6 +201,7 @@ git commit -m'merged feature #123'
 `git log --patch-with-stat`  
 
 `git diff --numstat  ветка1 ветка2`
+`git diff --name-only ветка1(или любой коммит) ветка2(или любой коммит)`
 
 ##### Заготовки git log
 `git log --pretty=format:"%H %an %ad"`  
