@@ -251,3 +251,14 @@ Then add the files except the ones included in the .gitignore file
 ```
 git checkout -b <local_branch_name> origin/<remote_branch_name>
 ```
+
+
+#### Удаление всех смердженных веток
+```
+git branch --merged | egrep -v "(^\*|main|master)" | xargs git branch -d
+```
+
+
+
+
+
