@@ -228,3 +228,26 @@ git pull
 
 #### Вывести список конфликтных файлов при мерджинге (слиянии)
 git diff --name-only --diff-filter=U
+
+#### Удаление всех файлов включенных в .gitignore
+```
+git clean -dfX
+```
+git-clean - Remove untracked files from the working tree
+-d Remove directories
+-f Remove forcefully
+-n Don’t actually remove anything, just show what would be done.
+-X Remove only files ignored by Git. This may be useful to rebuild everything from scratch, but keep manually created files.
+
+If the ignored files are already added to the index/staging, you must remove the files from the tracking index before using the above clean command.
+
+git rm -rf --cached .
+
+Then add the files except the ones included in the .gitignore file
+
+ git add . and create a commit with git commit -m "message"
+
+#### Переключится на ветку которая не сервере
+```
+git checkout -b <local_branch_name> origin/<remote_branch_name>
+```
